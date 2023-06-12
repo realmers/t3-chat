@@ -1,5 +1,5 @@
 {
-  "name": "@examples/next-websockets-starter",
+  "name": "t3-chat",
   "version": "10.30.0",
   "private": true,
   "engines": {
