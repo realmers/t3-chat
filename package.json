@@ -7,6 +7,7 @@
     "node": "^18.15.0"
   },
   "scripts": {
+    "vercel-build": "prisma generate && prisma db pull && next build",
     "prebuild": "prisma generate && prisma migrate deploy",
     "build:1-next": "cross-env NODE_ENV=production next build",
     "build:2-server": "tsc --project tsconfig.server.json",
@@ -41,7 +42,7 @@
     "singleQuote": true
   },
   "dependencies": {
-    "@prisma/client": "^4.14.1",
+    "@prisma/client": "^4.15.1",
     "@tanstack/react-query": "^4.18.0",
     "@trpc/client": "^10.29.1",
     "@trpc/next": "^10.29.1",
